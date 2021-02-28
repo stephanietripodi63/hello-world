@@ -1,5 +1,5 @@
 /*****
- * 
+ *Stephanie Tripodi
  ******/
 public class GitDemo {
     
@@ -14,6 +14,8 @@ public class GitDemo {
     *****/
     public double addNumber(double num) {
         System.out.print("Add num to previousNumber");
+        previousNumber = previousNumber + num;
+        return previousNumber;
     }
     
     /*****
@@ -35,6 +37,10 @@ public class GitDemo {
      *****/
     
     public double reverseNumber(int num){
+        double newNumber = 1;
+        for(int i = 1; i <= num; ++i){
+            newNumber = newNumber * i;
+
         double factorialNumber = 0;
         
         while( num != 0 ) {
@@ -45,6 +51,9 @@ public class GitDemo {
         
         return factorialNumber;
     }
+    }
+    private double reverseNumber(int num){
+        reverseNum = newNumber;
     }
     
 }
