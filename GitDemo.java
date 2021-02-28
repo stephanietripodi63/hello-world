@@ -24,16 +24,11 @@ public class GitDemo {
      *  the function will return the value of (1 * 2 * 3 * 4)
      *****/  
     public double findFactorial(int num) {
-        double factorialNumber = 0;
-        
-        while( num != 0 ) {
-            double temp = num % 10;
-            factorialNumber = factorialNumber * 10 + temp;
-            num /= 10;
+        for(int i = 1; i <= num; ++i){
+            newNumber = newNumber * i;
+            return newNumber;
         }
-        
-        return factorialNumber;
-    }
+       
     
     /*****
      * This function should reverse 'num' and return the resulting value.
@@ -45,9 +40,17 @@ public class GitDemo {
         double newNumber = 1;
         for(int i = 1; i <= num; ++i){
             newNumber = newNumber * i;
+
+        double factorialNumber = 0;
+        
+        while( num != 0 ) {
+            double temp = num % 10;
+            factorialNumber = factorialNumber * 10 + temp;
+            num /= 10;
         }
         
-        return newNumber;
+        return factorialNumber;
+    }
     }
     private double reverseNumber(int num){
         reverseNum = newNumber;
