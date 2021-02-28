@@ -1,5 +1,5 @@
 /*****
- * Stephanie Tripodi
+ * 
  ******/
 public class GitDemo {
     
